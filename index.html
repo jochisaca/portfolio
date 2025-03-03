@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jochi Saca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script src="works.js"></script>
+
+<body>
+
+  <div class="main-container">
+
+    <!-- Big, bold heading in a corner -->
+    <div class="bold-heading">
+      JOCHI SACA
+    </div>
+    <!-- Hero image in the center -->
+    <div class="hero">
+        <img src="photo_2025-03-03_10-53-34.jpg" alt="art">
+    </div>
+
+    <div class="secondary-img">
+        <img src="photo_2025-03-03_10-53-22.jpg" alt="art">
+    </div>
+    <!-- Random text blocks for a “busier” look -->
+    <div class="random-text-1">
+        Somewhere between directing, editing, and keeping clients from ruining their own ideas, 
+        I’ve managed to lead projects for record labels, brands, and media companies that actually care about content. 
+
+    </div>
+    <img src="JS_CIRCLE.png" alt="js-logo" class="js-logo">
+    <div class="random-text-2">
+        My work has clocked hundreds of millions of views, and my emails are 50% problem-solving, 50% convincing people why the first idea was better. 
+        I make things look good, sound good, and feel intentional—even when deadlines don’t allow for it.
+    </div>
+    <div class="random-text-3">
+        I thrive on tight deadlines, high expectations, 
+        and the occasional existential crisis when rendering at 99%. 
+        I’ve led content teams, scaled YouTube channels 10x, 
+        and executed high-stakes projects where 
+        "we'll fix it in post" was not an option. 
+        My editing timeline is always clean—can't say the same about my desktop.
+    </div>
+
+
+
+    <!-- Overlayed links in the middle (over the hero) -->
+    <div class="overlayed-nav">
+      <a href="#" id="worksLink">Works</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Contact Info (bottom left, or wherever you prefer) -->
+    <div class="contact-block" id="contact">
+      <p>Contact: 
+        <a href="mailto:jochisaca@gmail.com">jochisaca@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+<!-- Overlay for the Works Section -->
+<div class="overlay" id="worksOverlay">
+  <div class="overlay-header">
+    <h2>Your Projects</h2>
+    <button class="close-btn" id="closeOverlayBtn">&times; Close</button>
+  </div>
+
+  <!-- Main Featured Video Section -->
+  <div class="featured-video">
+    <h3 id="main-video-title">Kay Flock feat. Cardi B - Shake It</h3>
+    <p id="main-video-desc">Role: Director & Editor</p>
+    <div class="video-frame">
+      <iframe 
+        id="main-video-player"
+        width="560" height="315" 
+        src="https://www.youtube.com/embed/L7P68k8jWbI?si=w0z1pAL_z1kXq07E&amp;autoplay=1" 
+        frameborder="0" 
+        allow="autoplay; picture-in-picture" 
+        allowfullscreen 
+        sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms">
+      </iframe>
+    </div>
+  </div>
+  
+
+  <!-- Video Thumbnails Section -->
+  <div class="video-thumbnails">
+    <div class="thumb" data-title="ALX - Love On Top (Acoustic Performance)" 
+         data-desc="Role: Director & Editor" 
+         data-video="https://www.youtube.com/embed/YOUR_VIDEO_ID">
+      <img src="thumbnail1.jpg" alt="ALX - Love On Top">
+    </div>
+
+    <div class="thumb" data-title="Groupthink feat. Carlie Hanson - Miss Carolina" 
+         data-desc="Role: Director & Editor" 
+         data-video="https://www.youtube.com/embed/YOUR_VIDEO_ID">
+      <img src="thumbnail2.jpg" alt="Groupthink feat. Carlie Hanson - Miss Carolina">
+    </div>
+
+    <div class="thumb" data-title="HUF x FELT Collaboration" 
+         data-desc="Role: Director & Editor" 
+         data-video="https://www.youtube.com/embed/YOUR_VIDEO_ID">
+      <img src="thumbnail3.jpg" alt="HUF x FELT Collaboration">
+    </div>
+
+    <div class="thumb" data-title="Angela Yee's Lip Service" 
+         data-desc="Role: Director & Editor" 
+         data-video="https://www.youtube.com/embed/YOUR_VIDEO_ID">
+      <img src="thumbnail4.jpg" alt="Angela Yee's Lip Service">
+    </div>
+
+    <div class="thumb" data-title="Firsts | D. Savage" 
+         data-desc="Role: Director & Editor" 
+         data-video="https://www.youtube.com/embed/YOUR_VIDEO_ID">
+      <img src="thumbnail5.jpg" alt="Firsts | D. Savage">
+    </div>
+
+    <div class="thumb" data-title="Kay Flock feat. Cardi B - Shake It" 
+         data-desc="Role: Director & Editor" 
+         data-video="https://www.youtube.com/watch?v=L7P68k8jWbI&pp=ygUJa2F5IGZsb2Nr">
+      <img src="thumbnail6.jpg" alt="Kay Flock feat. Cardi B - Shake It">
+    </div>
+  </div>
+</div>
+
+  
+
+  <!-- JavaScript for toggling the overlay -->
+  <script>
+    const worksLink = document.getElementById('worksLink');
+    const worksOverlay = document.getElementById('worksOverlay');
+    const closeOverlayBtn = document.getElementById('closeOverlayBtn');
+
+    worksLink.addEventListener('click', function(e) {
+      e.preventDefault(); // prevent default anchor behavior
+      worksOverlay.style.display = 'flex'; // show the overlay
+    });
+
+    closeOverlayBtn.addEventListener('click', function() {
+      worksOverlay.style.display = 'none'; // hide the overlay
+    });
+  </script>
+</body>
+</html>
